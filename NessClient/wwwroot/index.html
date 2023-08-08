@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>NessServer Client</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>NessServer Client</h1>
+
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv" />
+            <button type="button" id="uploadButton">Upload File</button>
+        </form>
+
+        <button id="getClientsButton">Get Clients</button>
+        <pre id="clientsDisplay"></pre>
+
+        <h2>Add Client</h2>
+        <form id="addClientForm">
+            <input type="text" id="fullName" placeholder="Full Name" required />
+            <input type="text" id="id" placeholder="ID" required />
+            <input type="text" id="ipAddress" placeholder="IP Address" required />
+            <input type="text" id="phoneNumber" placeholder="Phone Number" required />
+            <button type="button" id="addClientButton">Add Client</button>
+        </form>
+
+        <h2>Get Geo Info</h2>
+        <form id="getGeoInfoForm">
+            <input type="text" id="geoIpAddress" placeholder="IP Address" required />
+            <button type="button" id="getGeoInfoButton">Get Geo Info</button>
+        </form>
+
+        <h2>Remove Client</h2>
+        <form id="removeClientForm">
+            <input type="text" id="removeClientId" placeholder="Client ID" required />
+            <button type="button" id="removeClientButton">Remove Client</button>
+        </form>
+    </div>
+</body>
+</html>
